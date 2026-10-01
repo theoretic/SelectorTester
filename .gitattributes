@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.module text eol=lf diff=php
+*.php text eol=lf diff=php
+*.js text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.gif binary

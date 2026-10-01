@@ -1,0 +1,6 @@
+.claude/settings.local.json
+.idea/
+.vscode/
+*.original.md
+*.min.js
+*.min.css

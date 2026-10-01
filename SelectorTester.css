@@ -1,0 +1,94 @@
+/* SelectorTester: only what UIkit classes do not cover */
+
+selector-tester-results {
+	display: block;
+	margin-top: 1.5rem;
+}
+
+selector-tester-results[aria-busy="true"] .st-table {
+	opacity: .5;
+	transition: opacity .2s .15s;
+}
+
+.st-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .5rem 1rem;
+	margin-bottom: .5rem;
+}
+
+.st-toolbar .st-filter {
+	width: 16rem;
+	max-width: 100%;
+}
+
+.st-selector {
+	word-break: break-all;
+}
+
+.st-table th[data-key] {
+	cursor: pointer;
+	white-space: nowrap;
+	user-select: none;
+}
+
+.st-table th[data-key]::after {
+	content: "\2195";
+	margin-left: .3em;
+	opacity: .25;
+}
+
+.st-table th[aria-sort="ascending"]::after {
+	content: "\2191";
+	opacity: 1;
+}
+
+.st-table th[aria-sort="descending"]::after {
+	content: "\2193";
+	opacity: 1;
+}
+
+.st-table tbody tr[data-id] {
+	cursor: pointer;
+}
+
+.st-table .st-path {
+	word-break: break-all;
+	min-width: 10rem;
+}
+
+.st-more {
+	margin-top: .5rem;
+}
+
+.st-detail .st-props th {
+	width: 1%;
+	text-transform: none;
+}
+
+.st-detail .st-fields dt {
+	text-transform: none;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.st-detail .st-fields dt small {
+	font-weight: normal;
+}
+
+.st-detail .st-fields dd {
+	overflow-wrap: anywhere;
+}
+
+.st-detail .st-fields img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* fallback modal when the admin theme has no UIkit */
+.st-dialog {
+	width: min(60rem, 95vw);
+	max-height: 90vh;
+	padding: 0;
+}

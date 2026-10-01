@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "selectortester-harness",
+      "runtimeExecutable": "D:/work/sites/modules/PHP-8.5/php.exe",
+      "runtimeArgs": ["-S", "localhost:8765", "-t", "D:/work/sites/home/davinci.osp/application/webroot", "D:/work/projects/processwire/modules/SelectorTester/tests/harness.php"],
+      "port": 8765
+    }
+  ]
+}
